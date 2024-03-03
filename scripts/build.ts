@@ -114,7 +114,7 @@ for (const work of works) {
 			.toLowerCase();
 		if (item.links.ja == null || item.links.zh == null) {
 			const translate: Translate = {
-				src: `https://cache.thwiki.cc/${item.links.wiki}`,
+				src: `https://cache-server.thwiki.cc/${item.links.wiki}`,
 				ja: `${TRANSLATE_ROOT}/${safeName}.ja.txt`,
 				zh: `${TRANSLATE_ROOT}/${safeName}.zh.txt`,
 			};
@@ -149,11 +149,11 @@ await Promise.all(
 		const dom = new JSDOM(html, { contentType: "text/html" });
 
 		const document = dom.window.document;
-		const refs = [...document.querySelectorAll("#mw-content-text .reference")];
-		for (const ref of refs) ref.remove();
+		document.querySelectorAll("#mw-content-text .reference").forEach((ref) => ref.remove());
+		document.querySelectorAll("#mw-content-text br").forEach((br) => br.insertAdjacentText("afterend", "\n"));
 
-		const zhs = [...document.querySelectorAll('#mw-content-text .tt-table td[lang="zh"]')];
-		const jas = [...document.querySelectorAll('#mw-content-text .tt-table td[lang="ja"]')];
+		const zhs = [...document.querySelectorAll<HTMLElement>('#mw-content-text .tt-table td[lang="zh"]')];
+		const jas = [...document.querySelectorAll<HTMLElement>('#mw-content-text .tt-table td[lang="ja"]')];
 
 		await fs.writeFile(path.join(SITE_ROOT, translate.ja), jas.map((ja) => ja.textContent).join("\n"), { encoding: "utf-8" });
 		await fs.writeFile(path.join(SITE_ROOT, translate.zh), zhs.map((zh) => zh.textContent).join("\n"), { encoding: "utf-8" });
