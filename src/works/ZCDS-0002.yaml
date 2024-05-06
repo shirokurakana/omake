@@ -1,0 +1,20 @@
+order: 1000200
+code: ZCDS-0002
+title: 莲台野夜行
+suffix: 正式版
+hidden: false
+tags:
+  era: album
+  state: final
+items:
+  - title: 附带故事
+    links:
+      wiki: 莲台野夜行/附带故事
+    type:
+      - booklet
+  - title: 公式站介绍
+    links:
+      wiki: 莲台野夜行/公式站介绍
+    type:
+      - 其他
+cover: https://upload.thwiki.cc/thumb/f/f2/%E8%8E%B2%E5%8F%B0%E9%87%8E%E5%A4%9C%E8%A1%8C%E5%B0%81%E9%9D%A2.jpg/80px-%E8%8E%B2%E5%8F%B0%E9%87%8E%E5%A4%9C%E8%A1%8C%E5%B0%81%E9%9D%A2.jpg

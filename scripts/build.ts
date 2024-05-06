@@ -145,7 +145,11 @@ await fs.writeFile(path.join(SITE_ROOT, "404.html"), notFoundHtml, { encoding: "
 console.log("fetch translations");
 await Promise.all(
 	translates.map(async (translate) => {
-		const html = await (await fetch(translate.src)).text();
+		const response = await fetch(translate.src);
+		if (!response.ok) {
+			throw new Error("fetch error");
+		}
+		const html = await response.text();
 		const dom = new JSDOM(html, { contentType: "text/html" });
 
 		const document = dom.window.document;

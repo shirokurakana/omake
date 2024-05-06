@@ -1,0 +1,20 @@
+order: 1001300
+code: ZCDS-0013
+title: 鸟船遗迹
+suffix: 正式版
+hidden: false
+tags:
+  era: album
+  state: final
+items:
+  - title: 附带故事
+    links:
+      wiki: 鸟船遗迹/附带故事
+    type:
+      - booklet
+  - title: 后记
+    links:
+      wiki: 鸟船遗迹/后记
+    type:
+      - 后记
+cover: https://upload.thwiki.cc/thumb/c/ce/%E9%B8%9F%E8%88%B9%E9%81%97%E8%BF%B9%E5%B0%81%E9%9D%A2.jpg/80px-%E9%B8%9F%E8%88%B9%E9%81%97%E8%BF%B9%E5%B0%81%E9%9D%A2.jpg

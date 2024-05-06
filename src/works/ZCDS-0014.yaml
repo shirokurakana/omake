@@ -1,0 +1,20 @@
+order: 1001400
+code: ZCDS-0014
+title: 伊奘诺物质
+suffix: 正式版
+hidden: false
+tags:
+  era: album
+  state: final
+items:
+  - title: 附带故事
+    links:
+      wiki: 伊奘诺物质/附带故事
+    type:
+      - booklet
+  - title: 后记
+    links:
+      wiki: 伊奘诺物质/后记
+    type:
+      - 后记
+cover: https://upload.thwiki.cc/thumb/1/13/%E4%BC%8A%E5%A5%98%E8%AF%BA%E7%89%A9%E8%B4%A8%E5%B0%81%E9%9D%A2.jpg/80px-%E4%BC%8A%E5%A5%98%E8%AF%BA%E7%89%A9%E8%B4%A8%E5%B0%81%E9%9D%A2.jpg

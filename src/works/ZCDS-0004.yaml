@@ -1,0 +1,25 @@
+order: 1000400
+code: ZCDS-0004
+title: 卯酉东海道
+suffix: 正式版
+hidden: false
+tags:
+  era: album
+  state: final
+items:
+  - title: 附带故事
+    links:
+      wiki: 卯酉东海道/附带故事
+    type:
+      - booklet
+  - title: 后记
+    links:
+      wiki: 卯酉东海道/后记
+    type:
+      - 后记
+  - title: 公式站介绍
+    links:
+      wiki: 卯酉东海道/公式站介绍
+    type:
+      - 其他
+cover: https://upload.thwiki.cc/thumb/3/33/%E5%8D%AF%E9%85%89%E4%B8%9C%E6%B5%B7%E9%81%93%E5%B0%81%E9%9D%A2.jpg/80px-%E5%8D%AF%E9%85%89%E4%B8%9C%E6%B5%B7%E9%81%93%E5%B0%81%E9%9D%A2.jpg

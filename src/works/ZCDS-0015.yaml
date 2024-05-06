@@ -1,0 +1,20 @@
+order: 1001500
+code: ZCDS-0015
+title: 燕石博物志
+suffix: 正式版
+hidden: false
+tags:
+  era: album
+  state: final
+items:
+  - title: 附带故事
+    links:
+      wiki: 燕石博物志/附带故事
+    type:
+      - booklet
+  - title: 后记
+    links:
+      wiki: 燕石博物志/后记
+    type:
+      - 后记
+cover: https://upload.thwiki.cc/thumb/0/00/%E7%87%95%E7%9F%B3%E5%8D%9A%E7%89%A9%E5%BF%97%E5%B0%81%E9%9D%A2.jpg/80px-%E7%87%95%E7%9F%B3%E5%8D%9A%E7%89%A9%E5%BF%97%E5%B0%81%E9%9D%A2.jpg

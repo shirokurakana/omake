@@ -1,0 +1,20 @@
+order: 1001800
+code: ZCDS-0018
+title: 七夕坂梦幻能
+suffix: 正式版
+hidden: false
+tags:
+  era: album
+  state: final
+items:
+  - title: 附带故事
+    links:
+      wiki: 七夕坂梦幻能/附带故事
+    type:
+      - booklet
+  - title: 后记
+    links:
+      wiki: 七夕坂梦幻能/后记
+    type:
+      - 后记
+cover: https://upload.thwiki.cc/thumb/c/ca/%E4%B8%83%E5%A4%95%E5%9D%82%E6%A2%A6%E5%B9%BB%E8%83%BD%E5%B0%81%E9%9D%A2.jpg/80px-%E4%B8%83%E5%A4%95%E5%9D%82%E6%A2%A6%E5%B9%BB%E8%83%BD%E5%B0%81%E9%9D%A2.jpg

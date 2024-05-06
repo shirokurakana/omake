@@ -1,0 +1,25 @@
+order: 1000700
+code: ZCDS-0007
+title: 大空魔术
+suffix: 正式版
+hidden: false
+tags:
+  era: album
+  state: final
+items:
+  - title: 附带故事
+    links:
+      wiki: 大空魔术/附带故事
+    type:
+      - booklet
+  - title: 后记
+    links:
+      wiki: 大空魔术/后记
+    type:
+      - 后记
+  - title: 公式站介绍
+    links:
+      wiki: 大空魔术/公式站介绍
+    type:
+      - 其他
+cover: https://upload.thwiki.cc/thumb/1/10/%E5%A4%A7%E7%A9%BA%E9%AD%94%E6%9C%AF%E5%B0%81%E9%9D%A2.jpg/80px-%E5%A4%A7%E7%A9%BA%E9%AD%94%E6%9C%AF%E5%B0%81%E9%9D%A2.jpg

@@ -1,0 +1,25 @@
+order: 1000300
+code: ZCDS-0003
+title: 梦违科学世纪
+suffix: 正式版
+hidden: false
+tags:
+  era: album
+  state: final
+items:
+  - title: 附带故事
+    links:
+      wiki: 梦违科学世纪/附带故事
+    type:
+      - booklet
+  - title: 后记
+    links:
+      wiki: 梦违科学世纪/后记
+    type:
+      - 后记
+  - title: 公式站介绍
+    links:
+      wiki: 梦违科学世纪/公式站介绍
+    type:
+      - 其他
+cover: https://upload.thwiki.cc/thumb/6/6f/%E6%A2%A6%E8%BF%9D%E7%A7%91%E5%AD%A6%E4%B8%96%E7%BA%AA%E5%B0%81%E9%9D%A2.jpg/80px-%E6%A2%A6%E8%BF%9D%E7%A7%91%E5%AD%A6%E4%B8%96%E7%BA%AA%E5%B0%81%E9%9D%A2.jpg
