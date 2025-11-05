@@ -114,7 +114,8 @@ for (const work of works) {
 			.toLowerCase();
 		if (item.links.ja == null || item.links.zh == null) {
 			const translate: Translate = {
-				src: `https://cache-server.thwiki.cc/${item.links.wiki}`,
+				// replace spaces with underscores to avoid raw spaces in URLs
+				src: `https://thbwiki.cc/${item.links.wiki.replace(/\s+/g, "_")}`,
 				ja: `${TRANSLATE_ROOT}/${safeName}.ja.txt`,
 				zh: `${TRANSLATE_ROOT}/${safeName}.zh.txt`,
 			};
@@ -143,9 +144,17 @@ const notFoundHtml = nunjucks.render("404.html.njk", {
 await fs.writeFile(path.join(SITE_ROOT, "404.html"), notFoundHtml, { encoding: "utf8" });
 
 console.log("fetch translations");
+// helper to percent-encode URL paths (non-ASCII chars -> %xx)
+function escapeUrl(u: string) {
+	try {
+		return encodeURI(u);
+	} catch (e) {
+		return u;
+	}
+}
 await Promise.all(
 	translates.map(async (translate) => {
-		const response = await fetch(translate.src);
+		const response = await fetch(escapeUrl(translate.src));
 		if (!response.ok) {
 			throw new Error("fetch error");
 		}
@@ -166,7 +175,9 @@ await Promise.all(
 
 console.log("fetch downloads");
 for (const chunk of chunks(downloads, 5)) {
-	await Promise.all(chunk.map(async ({ source, target }) => await fs.writeFile(path.join(SITE_ROOT, target), await download(source))));
+	await Promise.all(chunk.map(async ({ source, target }) =>
+		await fs.writeFile(path.join(SITE_ROOT, target), (await download(escapeUrl(source))) as any)
+	));
 }
 
 console.log("extract manuals");
