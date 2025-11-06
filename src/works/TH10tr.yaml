@@ -1,0 +1,17 @@
+order: 1001
+code: TH10tr
+title: 东方风神录
+suffix: 体验版
+hidden: true
+tags:
+  era: new
+  state: trial
+items:
+  - title: 网页 Manual
+    links:
+      wiki: 附带文档:东方风神录体验版/Manual
+      ja: /manual/th10tr/ja/
+      zh: /manual/th10tr/zh/
+    type:
+      - manual
+cover: https://upload.thbwiki.cc/thumb/a/ae/%E4%B8%9C%E6%96%B9%E9%A3%8E%E7%A5%9E%E5%BD%95%E5%B0%81%E9%9D%A2.png/80px-%E4%B8%9C%E6%96%B9%E9%A3%8E%E7%A5%9E%E5%BD%95%E5%B0%81%E9%9D%A2.png
