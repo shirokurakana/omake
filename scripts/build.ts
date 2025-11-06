@@ -144,17 +144,9 @@ const notFoundHtml = nunjucks.render("404.html.njk", {
 await fs.writeFile(path.join(SITE_ROOT, "404.html"), notFoundHtml, { encoding: "utf8" });
 
 console.log("fetch translations");
-// helper to percent-encode URL paths (non-ASCII chars -> %xx)
-function escapeUrl(u: string) {
-	try {
-		return encodeURI(u);
-	} catch (e) {
-		return u;
-	}
-}
 await Promise.all(
 	translates.map(async (translate) => {
-		const response = await fetch(escapeUrl(translate.src));
+		const response = await fetch(translate.src);
 		if (!response.ok) {
 			throw new Error("fetch error");
 		}
@@ -176,7 +168,7 @@ await Promise.all(
 console.log("fetch downloads");
 for (const chunk of chunks(downloads, 5)) {
 	await Promise.all(chunk.map(async ({ source, target }) =>
-		await fs.writeFile(path.join(SITE_ROOT, target), (await download(escapeUrl(source))) as any)
+		await fs.writeFile(path.join(SITE_ROOT, target), (await download((source))) as any)
 	));
 }
 
@@ -186,3 +178,5 @@ for (const name of await fs.readdir(MANUALZIP_ROOT, { encoding: "utf-8" })) {
 		await extract(path.join(MANUALZIP_ROOT, name), { dir: path.resolve(path.join(SITE_ROOT, MANUAL_ROOT)) });
 	}
 }
+
+console.log("build complete");
