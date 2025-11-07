@@ -114,7 +114,7 @@ for (const work of works) {
 			.toLowerCase();
 		if (item.links.ja == null || item.links.zh == null) {
 			const translate: Translate = {
-				src: `https://cache-server.thwiki.cc/${item.links.wiki}`,
+				src: `https://thbwiki.cc/${item.links.wiki}`,
 				ja: `${TRANSLATE_ROOT}/${safeName}.ja.txt`,
 				zh: `${TRANSLATE_ROOT}/${safeName}.zh.txt`,
 			};

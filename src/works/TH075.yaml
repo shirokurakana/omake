@@ -17,4 +17,9 @@ items:
       wiki: 附带文档:东方萃梦想/Readme
     type:
       - readme
-cover: https://upload.thwiki.cc/thumb/8/87/%E4%B8%9C%E6%96%B9%E8%90%83%E6%A2%A6%E6%83%B3%E5%B0%81%E9%9D%A2.jpg/80px-%E4%B8%9C%E6%96%B9%E8%90%83%E6%A2%A6%E6%83%B3%E5%B0%81%E9%9D%A2.jpg
+  - title: Manual
+    links:
+      wiki: 附带文档:东方萃梦想/Manual
+    type:
+      - manual
+cover: https://upload.thbwiki.cc/thumb/8/87/%E4%B8%9C%E6%96%B9%E8%90%83%E6%A2%A6%E6%83%B3%E5%B0%81%E9%9D%A2.jpg/80px-%E4%B8%9C%E6%96%B9%E8%90%83%E6%A2%A6%E6%83%B3%E5%B0%81%E9%9D%A2.jpg
