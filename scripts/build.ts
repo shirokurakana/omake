@@ -114,8 +114,7 @@ for (const work of works) {
 			.toLowerCase();
 		if (item.links.ja == null || item.links.zh == null) {
 			const translate: Translate = {
-				// replace spaces with underscores to avoid raw spaces in URLs
-				src: `https://thbwiki.cc/${item.links.wiki.replace(/\s+/g, "_")}`,
+				src: `https://thbwiki.cc/${item.links.wiki}`,
 				ja: `${TRANSLATE_ROOT}/${safeName}.ja.txt`,
 				zh: `${TRANSLATE_ROOT}/${safeName}.zh.txt`,
 			};
@@ -167,9 +166,7 @@ await Promise.all(
 
 console.log("fetch downloads");
 for (const chunk of chunks(downloads, 5)) {
-	await Promise.all(chunk.map(async ({ source, target }) =>
-		await fs.writeFile(path.join(SITE_ROOT, target), (await download((source))) as any)
-	));
+	await Promise.all(chunk.map(async ({ source, target }) => await fs.writeFile(path.join(SITE_ROOT, target), await download(source))));
 }
 
 console.log("extract manuals");
@@ -178,5 +175,3 @@ for (const name of await fs.readdir(MANUALZIP_ROOT, { encoding: "utf-8" })) {
 		await extract(path.join(MANUALZIP_ROOT, name), { dir: path.resolve(path.join(SITE_ROOT, MANUAL_ROOT)) });
 	}
 }
-
-console.log("build complete");
