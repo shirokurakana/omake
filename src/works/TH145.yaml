@@ -12,4 +12,39 @@ items:
       wiki: 附带文档:东方深秘录/Omake
     type:
       - omake
+  - title: history
+    links:
+      wiki: 附带文档:东方深秘录/history
+    type:
+      - history
+  - title: patchnote ver110
+    links:
+      wiki: 附带文档:东方深秘录/patchnote ver110
+    type:
+      - update
+  - title: patchnote ver120
+    links:
+      wiki: 附带文档:东方深秘录/patchnote ver120
+    type:
+      - update
+  - title: patchnote ver130
+    links:
+      wiki: 附带文档:东方深秘录/patchnote ver130
+    type:
+      - update
+  - title: patchnote ver140beta
+    links:
+      wiki: 附带文档:东方深秘录/patchnote ver140beta
+    type:
+      - update
+  - title: patchnote ver140
+    links:
+      wiki: 附带文档:东方深秘录/patchnote ver140
+    type:
+      - update
+  - title: rank
+    links:
+      wiki: 附带文档:东方深秘录/rank
+    type:
+      - 其他
 cover: https://upload.thbwiki.cc/thumb/c/cc/%E4%B8%9C%E6%96%B9%E6%B7%B1%E7%A7%98%E5%BD%95%E5%B0%81%E9%9D%A2.jpg/80px-%E4%B8%9C%E6%96%B9%E6%B7%B1%E7%A7%98%E5%BD%95%E5%B0%81%E9%9D%A2.jpg

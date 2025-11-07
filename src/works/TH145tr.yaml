@@ -12,6 +12,11 @@ items:
       wiki: 附带文档:东方深秘录体验版/Manual
     type:
       - manual
+  - title: Manual2
+    links:
+      wiki: 附带文档:东方深秘录WEB体验版/Manual
+    type:
+      - manual
   - title: Readme
     links:
       wiki: 附带文档:东方深秘录体验版/Readme

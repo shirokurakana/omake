@@ -17,4 +17,9 @@ items:
       wiki: 附带文档:东方绯想天/Readme
     type:
       - readme
+  - title: Manual 勘误表
+    links:
+      wiki: 附带文档:东方绯想天/Manual勘误表
+    type:
+      - manual
 cover: https://upload.thbwiki.cc/thumb/f/f4/%E4%B8%9C%E6%96%B9%E7%BB%AF%E6%83%B3%E5%A4%A9%E5%B0%81%E9%9D%A2.jpg/80px-%E4%B8%9C%E6%96%B9%E7%BB%AF%E6%83%B3%E5%A4%A9%E5%B0%81%E9%9D%A2.jpg
